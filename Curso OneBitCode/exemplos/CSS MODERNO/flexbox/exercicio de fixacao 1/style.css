@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  padding: 10px 25px;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-1 {
+  width: 40px;
+}
+.img-2 {
+  width: 200px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.buttonHeader {
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttonHeader:hover {
+  border-color: red;
+}
