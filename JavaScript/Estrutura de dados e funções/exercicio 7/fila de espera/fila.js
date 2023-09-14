@@ -4,7 +4,8 @@ let opcao = "";
 
 do {
   opcao = prompt(
-    listaOrdenada +
+    "Lista de pacientes:\n" +
+      listaOrdenada +
       "\n\n1. Adicionar Paciente" +
       "\n2. Consultar Paciente" +
       "\n3. Sair"
@@ -15,8 +16,12 @@ do {
       listaDePacientes.push(novoPaciente);
       break;
     case "2":
-      alert("O paciente " + listaDePacientes[0] + " foi consultado");
-      listaDePacientes.shift();
+      let pacienteRemovido = listaDePacientes.shift();
+      if (pacienteRemovido) {
+        alert("O paciente " + pacienteRemovido + " foi consultado");
+      } else {
+        alert("Não há pacientes na lista");
+      }
       break;
     case "3":
       alert("Encerrando...");
